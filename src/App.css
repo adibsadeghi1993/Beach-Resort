@@ -17,11 +17,21 @@
 }
 /* globals */
 body {
-  /* padding-top: 66px; */
+  padding-top: 57px;
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
+}
+@media screen and (max-width:560px) {
+  body{
+    padding-top: 57px;
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+  }
+  
 }
 h1 {
   font-size: 3em;
@@ -159,7 +169,7 @@ h6 {
 /* Hero */
 .defaultHero,
 .roomsHero {
-  min-height: calc(100vh - 66px);
+  min-height: calc(100vh - 57px);
   background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -253,6 +263,7 @@ h6 {
 }
 .services h6 {
   letter-spacing: var(--mainSpacing);
+  text-transform: capitalize;
 }
 .services p {
   width: 80%;
