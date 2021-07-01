@@ -7,6 +7,7 @@ const RoomFilter = () => {
   //   console.log(context);
   const {
     filter,
+    maxPrice,
 
     type,
     setType,
@@ -121,7 +122,7 @@ const RoomFilter = () => {
           <input
             type="range"
             className="form-control"
-            min={minPrice}
+            min={0}
             max={maxPrice}
             value={price}
             onChange={handlePrice}

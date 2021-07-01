@@ -8,6 +8,8 @@ const Context = ({ children }) => {
   const [filter, setFilter] = useState([]);
   const [sortedRooms, setSortedRooms] = useState(filter);
   const [FeaturedRooms, setFeaturedRooms] = useState([]);
+  const [maxPrice,setMaxPrice]=useState(0)
+  const [maxSize,setMaxSize]=useState(0)
 
   const [type, setType] = useState("all");
   const [capacity, setCapacity] = useState(1);
@@ -95,6 +97,8 @@ const Context = ({ children }) => {
         setRooms,
         sortedRooms,
         FeaturedRooms,
+        maxPrice,
+        maxSize,
 
         getRoom,
         type,
