@@ -52,7 +52,7 @@ const Context = ({ children }) => {
       setFilter(newRooms);
       // setSortedRooms(newRooms)
     } else {
-      const filteredRooms = newRooms.filter((item) => item.type == type);
+      const filteredRooms = newRooms.filter((item) => item.type === type);
       setFilter(filteredRooms);
       // setSortedRooms(newRooms)
     }
@@ -66,7 +66,7 @@ const Context = ({ children }) => {
   const capacityHandler = (cap) => {
     const filterRoom = [...filter];
     const capacityFilteredRoom = filterRoom.filter(
-      (item) => item.capacity == cap
+      (item) => item.capacity === cap
     );
     setFilter(capacityFilteredRoom);
     console.log(capacityFilteredRoom);
