@@ -20,7 +20,7 @@ const SingleRoom = (props) => {
    
     console.log(props)
     console.log(data)
-    const {name,description,capacity,size,price,extras,breakfast,pets,images}=data
+    const {name,description,capacity,size,price,breakfast,pets,images}=data
     return (
         <>
         <Hero hero="roomsHero">
@@ -34,7 +34,7 @@ const SingleRoom = (props) => {
         </Hero>
         <section  className="single-room">
             <div className="single-room-images">
-                {images.map((item,index)=>{
+                {images?.map((item,index)=>{
                     return <img src={item} key={index} alt={name} />
                 })}
 
