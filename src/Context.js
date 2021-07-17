@@ -48,7 +48,7 @@ const Context = ({ children }) => {
   const filterHandler = (type) => {
     console.log(rooms);
     const newRooms = [...rooms];
-    if (type == "all") {
+    if (type === "all") {
       setFilter(newRooms);
       // setSortedRooms(newRooms)
     } else {

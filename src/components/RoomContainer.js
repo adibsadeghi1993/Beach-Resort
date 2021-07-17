@@ -7,7 +7,7 @@ import { RoomContext } from '../Context'
 const RoomContainer = () => {
     const context = useContext(RoomContext)
     // console.log(context)
-    const {loading,sortedRooms,rooms}=context
+    const {sortedRooms,rooms}=context
     return (
         <div>
            
