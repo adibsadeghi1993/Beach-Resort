@@ -18,6 +18,7 @@ const Context = ({ children }) => {
 
   useEffect(() => {
     const Rooms = formatData(items);
+    console.log(Rooms)
 
     setRooms(Rooms);
     setFilter(Rooms);
@@ -42,6 +43,7 @@ const Context = ({ children }) => {
       let room = { ...item.fields, images, id };
       return room;
     });
+    console.log(tempItems)
     return tempItems;
   };
 
