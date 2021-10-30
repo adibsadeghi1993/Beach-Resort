@@ -97,7 +97,7 @@ const RoomFilter = () => {
         <div className="form-group">
           <label>room type</label>
           <select className="form-control" onChange={handleChange}>
-            <option value="all">all</option>
+            <option selected value="all">all</option>
             <option value="single">single</option>
             <option value="family">family</option>
             <option value="double">double</option>
